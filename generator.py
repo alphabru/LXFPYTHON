@@ -1,3 +1,5 @@
+#杨辉三角
+
 #by function
 def tri(r):
     p = [1]
