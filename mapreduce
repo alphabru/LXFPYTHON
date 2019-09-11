@@ -1,0 +1,45 @@
+#https://www.liaoxuefeng.com/wiki/1016959663602400/1017329367486080
+
+#1.把一个名字变成首字母大写，其他字母小写的正常形式
+
+#fuction
+def normalize(name):
+    return name.capitalize()
+
+#call function
+# 测试:
+L1 = ['adam', 'LISA', 'barT']
+L2 = list(map(normalize, L1))
+print(L2)
+
+
+
+#2.求一个序列所有元素的积
+#function
+from functools import reduce
+def prod(L):
+    return reduce(lambda x,y:x*y,L)        
+    
+#call function
+print('3 * 5 * 7 * 9 =', prod([3, 5, 7, 9]))
+if prod([3, 5, 7, 9]) == 945:
+    print('测试成功!')
+else:
+    print('测试失败!')
+    
+    
+#3.把字符串转换成浮点数
+#function
+from functools import reduce
+
+def str2float(s):
+    S = s.split('.')
+    return reduce(lambda x, y: 10*int(x) + int(y),S[0])  + reduce(lambda x, y: float(x) / 10 + float(y),S[1][::-1]) / 10
+    
+#call function
+print('str2float(\'123.456\') =', str2float('123.456'))
+if abs(str2float('123.456') - 123.456) < 0.00001:
+    print('测试成功!')
+else:
+    print('测试失败!')
+ Run
