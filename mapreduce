@@ -1,6 +1,6 @@
 #https://www.liaoxuefeng.com/wiki/1016959663602400/1017329367486080
 
-#####1.把一个名字变成首字母大写，其他字母小写的正常形式
+##### 1.把一个名字变成首字母大写，其他字母小写的正常形式
 
 #fuction
 def normalize(name):
@@ -13,7 +13,7 @@ L2 = list(map(normalize, L1))
 print(L2)
 
 
-#####2.求一个序列所有元素的积
+##### 2.求一个序列所有元素的积
 #function
 from functools import reduce
 def prod(L):
@@ -27,7 +27,7 @@ else:
     print('测试失败!')
     
     
-#####3.把字符串转换成浮点数
+##### 3.把字符串转换成浮点数
 #function
 from functools import reduce
 
